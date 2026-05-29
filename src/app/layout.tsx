@@ -16,8 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="fa-IR"
-      dir="rtl"
+      lang="en"
       suppressHydrationWarning
       className={`${vazir.className} h-full antialiased`}
     >
