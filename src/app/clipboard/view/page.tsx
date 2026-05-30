@@ -1,3 +1,7 @@
+export const metadata = {
+  title: "Dropbaz | View",
+};
+
 const ViewClipboard = () => {
   return (
     <div>

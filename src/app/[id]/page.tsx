@@ -1,5 +1,9 @@
 import { ParamsType } from "@/types/global";
 
+export const metadata = {
+  title: "Dropbaz | Clipboard",
+};
+
 const ViewNode = async ({ params }: ParamsType) => {
   const { id } = await params;
   return (
