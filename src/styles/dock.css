@@ -1,0 +1,7 @@
+.label {
+  display: none;
+}
+
+.item:hover .label {
+  display: block;
+}
