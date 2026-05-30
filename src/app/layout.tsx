@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Vazirmatn } from "next/font/google";
+import Provider from "@/components/provider";
 import "@/styles/globals.css";
 
 export const metadata: Metadata = {
@@ -20,7 +21,11 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`${vazir.className} h-full antialiased`}
     >
-      <body>{children}</body>
+      <body>
+        <main className="max-w-3xl px-2 max-md:max-w-sm max-md:px-0.5 mx-auto">
+          <Provider>{children}</Provider>
+        </main>
+      </body>
     </html>
   );
 }
