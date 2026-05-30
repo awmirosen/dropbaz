@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Dropbaz | Add",
+  title: "Dropbaz | add",
 };
 
 const AddClipboard = () => {
