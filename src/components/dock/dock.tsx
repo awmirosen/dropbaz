@@ -19,7 +19,7 @@ const Dock = () => {
     "item relative p-1.5 cursor-pointer hover:bg-stone-300/70 dark:hover:bg-stone-800/50 rounded-full transition-all duration-300";
 
   const labelStyle =
-    "label text-sm absolute bottom-14 left-1/2 -translate-x-1/2 z-0";
+    "label text-xs absolute bottom-14 left-1/2 -translate-x-1/2 z-0";
 
   return (
     <nav className="absolute bottom-8 left-1/2 -translate-x-1/2 w-54 h-12 rounded-full flex items-center justify-around px-1 z-50 bg-stone-300/10 dark:bg-stone-900/40 border border-stone-400/60 dark:border-stone-800/60 transition-all duration-300">
