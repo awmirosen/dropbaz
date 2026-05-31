@@ -1,6 +1,7 @@
 "use client";
 
 import { useFormStatus } from "react-dom";
+
 import Button from "@/components/ui/Button";
 
 type SubmitButtonType = {
@@ -12,7 +13,7 @@ const SubmitButton = ({ title, loading }: SubmitButtonType) => {
   const { pending } = useFormStatus();
 
   return (
-    <Button disabled={pending} size="full">
+    <Button type={pending ? "button" : "submit"} disabled={pending} size="full">
       {pending ? loading : title}
     </Button>
   );

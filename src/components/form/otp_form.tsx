@@ -18,7 +18,7 @@ const OtpForm = () => {
   return (
     <form ref={formRef}>
       <label className="w-full flex justify-center mb-4 text-lg">
-        کد کلیپ بورد را وارد کنید
+        Type your Clipboard Code
       </label>
       <OTPInput
         value={code}
@@ -39,7 +39,7 @@ const OtpForm = () => {
         shouldAutoFocus
       />
       <div className="my-4 flex">
-        <SubmitButton title="مشاهده" loading="در حال انتقال ..." />
+        <SubmitButton title="Continue" loading="Loading..." />
       </div>
     </form>
   );
