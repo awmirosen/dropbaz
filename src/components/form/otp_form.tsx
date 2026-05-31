@@ -18,7 +18,7 @@ const OtpForm = () => {
   return (
     <form ref={formRef}>
       <label className="w-full flex justify-center mb-4 text-lg">
-        Type your Clipboard Code
+        Enter your Clipboard Code
       </label>
       <OTPInput
         value={code}
