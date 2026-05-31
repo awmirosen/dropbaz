@@ -31,23 +31,19 @@ const Dock = () => {
           <label className={labelStyle}>Back</label>
         </div>
       )}
-
       {/* Home */}
       <Link href="/" className={itemStyle}>
         <LuHouse size={22} />
         <label className={labelStyle}>Home</label>
       </Link>
-
       {/* Border */}
       <div className="h-3/5 w-[0.1rem] bg-stone-800/30 dark:bg-stone-400/60 block" />
       {/* Border */}
-
       {/* Github */}
       <a href={github} target="_blank" className={itemStyle}>
         <RiGithubLine size={22} />
         <label className={labelStyle}>Github</label>
       </a>
-
       {/* Github */}
       <div className={`${itemStyle} flex items-center`}>
         <ThemeBtn>
