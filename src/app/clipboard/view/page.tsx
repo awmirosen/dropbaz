@@ -1,12 +1,14 @@
+import OtpForm from "@/components/form/otp_form";
+
 export const metadata = {
   title: "Dropbaz | view",
 };
 
 const ViewClipboard = () => {
   return (
-    <div>
-      <h1>ViewClipboard</h1>
-    </div>
+    <section className="flex justify-center items-center mx-1">
+      <OtpForm />
+    </section>
   );
 };
 
