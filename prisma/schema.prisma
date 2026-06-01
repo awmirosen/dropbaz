@@ -10,7 +10,7 @@ datasource db {
 
 model clipboard {
   id  String @id @default(cuid())
-  url Int @unique
+  code Int @unique 
   createdAt DateTime @default(now())
   content String 
 }

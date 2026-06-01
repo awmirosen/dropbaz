@@ -1,16 +1,16 @@
 "use client";
 
-// import { addClipboard } from "@/actions/clipboard/add";
+import { AddToClipboard } from "@/actions/clipboard/add";
 import { useState } from "react";
 
 import SubmitButton from "@/components/submit_button";
 
+export const maxChar = 1200;
 const AddClipboardForm = () => {
   const [data, setData] = useState({ content: "" });
-  const maxChar = 1200;
 
   return (
-    <form className="w-full">
+    <form action={AddToClipboard} className="w-full">
       <div className="w-full relative">
         <textarea
           name="content"
