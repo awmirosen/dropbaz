@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import OTPInput from "react-otp-input";
 import SubmitButton from "@/components/submit_button";
-// import { viewClipboard } from "@/actions/clipboard/view";
+import { ViewClipboard } from "@/actions/clipboard/view";
 
 const OtpForm = () => {
   const [code, setCode] = useState("");
@@ -16,7 +16,7 @@ const OtpForm = () => {
   }, [code]);
 
   return (
-    <form ref={formRef}>
+    <form action={() => ViewClipboard(code)} ref={formRef}>
       <label className="w-full flex justify-center mb-4 text-lg">
         Enter your Code
       </label>
