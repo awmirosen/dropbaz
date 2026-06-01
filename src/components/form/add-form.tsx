@@ -22,7 +22,7 @@ const AddClipboardForm = () => {
           maxLength={maxChar}
         />
       </div>
-      <div dir="rtl" className="flex mt-4">
+      <div className="flex mt-4">
         <div className="w-1/2">
           <SubmitButton title="Create" loading="Creating.." />
         </div>

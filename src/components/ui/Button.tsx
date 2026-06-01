@@ -29,12 +29,14 @@ const Button = ({
   variant = "primary",
   size = "md",
   round = "md",
+  ...props
 }: ButtonType) => {
   return (
     <button
       className={`border cursor-pointer transition-all duration-200 flex justify-center gap-1 focus-visible:outline-0
      ${variants[variant]} ${sizes[size]} ${rounded[round]}`}
       style={{ lineHeight: 1.3 }}
+      {...props}
     >
       {children}
     </button>
