@@ -23,11 +23,10 @@ const AddClipboardForm = () => {
         />
       </div>
       <div className="flex mt-4">
-        
         <div className="w-1/2 flex select-none text-stone-800 dark:text-stone-300">
-          <span>{maxChar.toString() as string}</span>
-          <span className="px-1.5">-</span>
           <span>{data.content.length}</span>
+          <span className="px-1.5">-</span>
+          <span>{maxChar.toString() as string}</span>
         </div>
         <div className="w-1/2">
           <SubmitButton title="Create" loading="Creating.." />
