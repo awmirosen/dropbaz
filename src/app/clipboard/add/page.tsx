@@ -1,4 +1,4 @@
-import AddClipboardForm from "@/components/form/add_form";
+import AddClipboardForm from "@/components/form/add-form";
 
 export const metadata = {
   title: "Dropbaz | add",

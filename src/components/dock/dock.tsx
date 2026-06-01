@@ -6,7 +6,7 @@ import { usePathname, useRouter } from "next/navigation";
 import { LuHouse, LuArrowLeft } from "react-icons/lu";
 import { RiGithubLine } from "react-icons/ri";
 import { VscColorMode } from "react-icons/vsc";
-import ThemeBtn from "./themeBtn";
+import ThemeBtn from "./theme-Btn";
 import "@/styles/dock.css";
 
 const Dock = () => {

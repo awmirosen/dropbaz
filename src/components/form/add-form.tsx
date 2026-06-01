@@ -3,7 +3,7 @@
 import { AddToClipboard } from "@/actions/clipboard/add";
 import { useState } from "react";
 
-import SubmitButton from "@/components/submit_button";
+import SubmitButton from "@/components/submit-button";
 
 export const maxChar = 1200;
 const AddClipboardForm = () => {

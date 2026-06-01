@@ -1,7 +1,7 @@
 "use server";
 
 import { prisma } from "@/lib/prisma";
-import { maxChar } from "@/components/form/add_form";
+import { maxChar } from "@/components/form/add-form";
 import { redirect } from "next/navigation";
 
 export const AddToClipboard = async (formData: FormData) => {

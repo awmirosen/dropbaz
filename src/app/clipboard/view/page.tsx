@@ -1,4 +1,4 @@
-import OtpForm from "@/components/form/otp_form";
+import OtpForm from "@/components/form/otp-form";
 
 export const metadata = {
   title: "Dropbaz | view",

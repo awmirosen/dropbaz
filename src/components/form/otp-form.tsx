@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import OTPInput from "react-otp-input";
-import SubmitButton from "@/components/submit_button";
+import SubmitButton from "@/components/submit-button";
 import { ViewClipboard } from "@/actions/clipboard/view";
 
 const OtpForm = () => {
