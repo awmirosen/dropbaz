@@ -1,7 +1,7 @@
 import { prisma } from "@/lib/prisma";
 import { notFound } from "next/navigation";
 
-export const GetClipboardData = async (code: string) => {
+export const getClipboardData = async (code: string) => {
   try {
     const numCode = Number(code);
 
