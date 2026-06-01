@@ -1,13 +1,14 @@
 "use client";
 
 import Button from "@/components/ui/Button";
-import { LuCopy, LuCopyCheck } from "react-icons/lu";
+import { LuCopy, LuCheck } from "react-icons/lu";
 import { useState } from "react";
 
 type CopyButtonType = React.ButtonHTMLAttributes<HTMLButtonElement> & {
   content: string;
   title?: string;
   doneTitle?: string;
+  icon?: React.ReactNode;
   size?: "sm" | "md" | "lg" | "full";
 };
 
@@ -16,6 +17,7 @@ const CopyButton = ({
   size = "md",
   title,
   doneTitle,
+  icon = null,
 }: CopyButtonType) => {
   const [copy, setCopy] = useState(false);
 
@@ -31,10 +33,9 @@ const CopyButton = ({
     <Button
       onClick={() => copyToClipboard(content.toString())}
       disabled={copy}
-      variant="secondary"
       size={size}
     >
-      {copy ? <LuCopyCheck /> : <LuCopy />}
+      {copy ? <LuCheck /> : icon}
       {title && copy ? doneTitle : title}
     </Button>
   );
