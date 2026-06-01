@@ -24,7 +24,7 @@ const AddClipboardForm = () => {
       </div>
       <div dir="rtl" className="flex mt-4">
         <div className="w-1/2">
-          <SubmitButton title="ساختن" loading="در حال انتقال ..." />
+          <SubmitButton title="Create" loading="Creating.." />
         </div>
         <div className="w-1/2 flex justify-end select-none text-stone-800 dark:text-stone-300">
           <span>{maxChar.toString() as string}</span>
