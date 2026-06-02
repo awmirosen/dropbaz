@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning className={vazir.className}>
+    <html lang="en" className={vazir.className} suppressHydrationWarning>
       <body className="w-full h-full bg-stone-50 dark:bg-stone-950 text-stone-900 dark:text-stone-100">
         <Provider>
           <main className="max-w-3xl p-2 max-md:max-w-sm max-md:px-0.5 mx-auto">

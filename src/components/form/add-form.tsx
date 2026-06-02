@@ -20,6 +20,7 @@ const AddClipboardForm = () => {
           required
           autoFocus
           maxLength={maxChar}
+          placeholder="write here"
         />
       </div>
       <div className="flex mt-4">
