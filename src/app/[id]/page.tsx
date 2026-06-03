@@ -23,7 +23,7 @@ const ViewNode = async ({ params }: ParamsType) => {
       {/* qr and code */}
       <div className="flex justify-center items-center gap-4">
         <div className="flex flex-col justify-center items-center mb-4 gap-2">
-          <span className="mx-1 text-2xl mt-1">{code}</span>
+          <span className="mx-1 text-2xl font-bold mt-1">{code}</span>
           <div className="flex gap-2">
             <CopyButton content={code.toString()} size="md" icon={<LuCopy />} />
             <CopyButton content={url} size="md" icon={<LuLink2 />} />
